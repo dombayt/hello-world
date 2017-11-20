@@ -1,0 +1,25 @@
+NORMALIZACIJSKE FORME
+
+Proces organiziranja podataka radi minimanog udvostručenja podataka, odnosno, proces stvaranja učinkovite, pouzdan i fleskibilne baze podataka naziva se normalizacija.
+
+Postupak nrmalizacije provodi se neprekidnom primjenom pravila koja se nazivaju normalizacijske forme.
+
+Postoji šest normalizacijskih formi (NF):
+1.	Prva normalna forma (1NF)
+2.	Druga normalna forma (2NF)
+3.	Treća normalna forma (3NF)
+4.	Boyce-Coddova normalna forma (BCNF)
+5.	Četvrta normalna forma (4NF)
+6.	Peta normalna forma (5NF)
+
+Prva normalna forma (1NF)
+
+1NF – zahtijeva da svaka vrijednost u stupcu koja se pojavljuje bude jedinstvena i da svi reci imaju jednak broj polja. Ovo govori da se kao jedna vrijednost ne smje pojaviti skup podataka (primjer česte greške je kada se u jednom polju nalaze npr. i ime i prezime što suložnjuje stvari već prilikom pretrage po prezimenu).
+
+2NF – zahtijeva da bude udovoljena 1NF forma te da svi reci budu jednoznačno određeni i potpuno ovisni o primernome ključu.
+
+3NF – zahtijeva da bude zadovoljena 2NF forma, te da ne postoje tzv. tranzitivne ovisnosti o primarnome ključu, tj. da svi stupci koji nisu primarni ključ budu moraju biti neovisni jedni o drugima (znači da se ne smje dogoditi da neki podatak ovisi o nekom drugom, koji pak ovisi o primarnom ključu. 
+
+BCNF – ova veza zahtijeva da, ako postoji stupac o kojem je ovisan neki drugi, onda on mora biti ključ u tablici. Kao i kod prijašnjih veza, ako je neka relacija u BCNF-u, onda mora biti i i u 3NF (kao i 2NF te 1NF).
+
+4NF i 5NF – ove dvije forme se relativno rijetko koriste jer većinu situacija možemo riješiti pomoću jedne od prve tri normalne forme. Idealno bi bilo bazu dovesti u 5NF formu, ali je s praktičnog stajališta to često nepotrebno jer se razbijanjem baze na mnogo malih tablica usporava čitanje s medija što mož biti lošije od nenormalizirane tablice. 
